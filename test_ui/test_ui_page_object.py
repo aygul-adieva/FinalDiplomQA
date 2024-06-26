@@ -30,8 +30,8 @@ def test_search_book_rus_ui():
         browser = webdriver.Chrome()
         main_page = MainPage(browser) 
         main_page.set_cookie_policy()
-        text = main_page.search_book_rus_ui('Слово пацана')
-        assert text [0:47] == 'Показываем результаты по запросу «слово пацана»'
+        text = main_page.search_book_rus_ui('Gary Potter')
+        assert text [0:47] == 'Показываем результаты по запросу «Gary Potter»'
 
 @allure.title("Поиск книги на латинице")
 @allure.description("Проверка получения книг на латинице")
@@ -44,8 +44,8 @@ def test_search_book_eng_ui():
         browser = webdriver.Chrome()
         main_page = MainPage(browser) 
         main_page.set_cookie_policy()
-        text = main_page.search_book_eng_ui('Geroi nashego vremeni')
-        assert text [0:53] == "Показываем результаты по запросу «hero nashe vremena»"
+        text = main_page.search_book_eng_ui('Gary Potter')
+        assert text [0:53] == "Показываем результаты по запросу «Gary Potter»"
 
 @allure.title("Поиск по символам юникода")
 @allure.description("Проверка поиска по символам")
@@ -74,7 +74,7 @@ def test_catalog_search():
         main_page.set_cookie_policy()
         text = main_page.catalog_search() 
     with allure.step("Проверка текста в выбранной категории каталога"):
-        assert text[0:14] == "ПОЭЗИЯ И СТИХИ"
+        assert text[0:14] == "Фантастика.Фэнтази"
 
 @allure.title("Проверка пустой корзины")
 @allure.description("Проверка, что в пустой корзине появляется сообщение 'В корзине ничего нет'")

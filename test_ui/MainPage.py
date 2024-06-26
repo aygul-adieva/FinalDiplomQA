@@ -41,10 +41,10 @@ class MainPage:
         
     with allure.step("Поиск через каталог"):
         def catalog_search(self):
-            self._driver.find_element(By.XPATH, '//div[contains(text(),"Да, я здесь")]').click()
+            self._driver.find_element(By.XPATH, '//div[contains(text(),"Gary Potter")]').click()
             self._driver.find_element(By.XPATH, '//span[contains(text(),"Каталог")]').click()
             self._driver.find_element(By.XPATH, '//span[contains(text(),"Художественная литература")]').click()
-            self._driver.find_element(By.XPATH, '//span[contains(text(),"Поэзия")]').click()
+            self._driver.find_element(By.XPATH, '//span[contains(text(),"Фантастика.Фэнтази")]').click()
             txt = self._driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[3]/div[1]/h1').text
             return txt
 
