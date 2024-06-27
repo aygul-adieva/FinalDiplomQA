@@ -3,8 +3,8 @@ import allure
 import pytest
 import unittest
 
-BASE_URL = "https://www.chitai-gorod.ru/"
-BASE_URL_2 = "https://www.chitai-gorod.ru/"
+BASE_URL = "https://web-gate.chitai-gorod.ru/api/v1"
+BASE_URL_2 = "https://web-gate.chitai-gorod.ru/api/v2"
 TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTk1ODMwNDgsImlhdCI6MTcxOTQxNTA0OCwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjhkMDVhODU5ODJjY2NjOWFjNTdjYWViMTk5YWY3YzdiN2ZjODJjNjYxMmMwNjQ5ZDI4NDBlMmU4NGU4ODEwZDkiLCJ0eXBlIjoxMH0.9uJ2HTplgZiFLTugUnhYmkP5FQKy0-Xd-Ps8FFvAIt8"
 book_id = "Gary Potter"
 
